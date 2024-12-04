@@ -13,22 +13,6 @@ public class AdventOfCode {
     public static void main(String[] args) {
         System.out.println("Advent of code - Day 1");
         //Example
-//        List<Integer> leftSide = new ArrayList<>(){{
-//            add(3);
-//            add(4);
-//            add(2);
-//            add(1);
-//            add(3);
-//            add(3);
-//        }};
-//        List<Integer> rightSide = new ArrayList<>(){{
-//            add(4);
-//            add(3);
-//            add(5);
-//            add(3);
-//            add(9);
-//            add(3);
-//        }};
         List<Integer> leftSide = new ArrayList<>();
         List<Integer> rightSide = new ArrayList<>();
         try {
@@ -47,9 +31,7 @@ public class AdventOfCode {
             throw new RuntimeException(e);
         }
         Day1 day1Resolution = new Day1(leftSide,rightSide);
-        Integer totalSum = day1Resolution.getTotalLocationIDDiff();
-
-        System.out.println("Total sum: "+totalSum);
+        day1Resolution.resolutionDay1();
 
     }
 
